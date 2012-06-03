@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setting up Jekyll"
-description: ""
+description: "Setting up Jekyll on Github.com pages"
 category: 
 tags: [jekyll,github.com]
 ---
