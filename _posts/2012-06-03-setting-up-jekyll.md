@@ -53,12 +53,12 @@ But it was throwing this error:
 	Results logged to /Users/johanlaidlaw/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/gems/1.9.1/gems/fast-stemmer-1.0.1/ext/gem_make.out
 
 
-I know I had Xcode installed installed, but I tried to reinstall it. That didn't help. If I did:
+I knew I had Xcode installed so I tried to reinstall it. That didn't help. gcc-4.2 was installed but it looked like it was placed in the wrong directory.
 	
 	$ which gcc-4.2 
 	=> /Developer/usr/bin/gcc-4.2
 
-So I thought I could create a syblink in the /usr/bin directory.
+So I thought I could create a symlink in the /usr/bin directory.
 	
 	$ sudo ln -s /Developer/usr/bin/gcc-4.2 /usr/bin/gcc-4.2
 
@@ -83,7 +83,7 @@ But now I got another error message
 
 After some googling a downloaded the OSX GCC installer from [https://github.com/kennethreitz/osx-gcc-installer](https://github.com/kennethreitz/osx-gcc-installer), installed it and then it could find gcc
 
-Then I could start the Jekyll server and develop the pages on my localhost. It starts the server on port 4000.
+Then I could start the Jekyll server and develop the pages without pushing to Github. Jekyll starts the server on port 4000.
 	
 	$ cd /Sites/johanlaidlaw.github.com
 	$ sudo jekyll --server
